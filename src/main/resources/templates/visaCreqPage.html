@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div th:if="${errMsgStr}">
+	   <p><b>Error</b></p>
+	   <div th:text="${errMsgStr}"></div>
+	</div>  
+	<div th:if="${isChallenge}">
+		<p><b>Challenge Flow</b></p>
+		<form th:action="${acsUrl}" method="post"> <p><input type="submit" value="Submit CReq2.1" />
+	    	<textarea id="aReq210" name="creq" cols="200" rows="40" th:text="${cReq}" th:value="${cReq}"></textarea>
+	    </form>
+	</div>
+	<!-- ELSE -->
+	<div th:unless="${isChallenge}">
+	   <p><b>ARes</b></p>
+	   <div th:text="${aResJson}"></div>
+	</div>
+
+
+</body>
+</html>

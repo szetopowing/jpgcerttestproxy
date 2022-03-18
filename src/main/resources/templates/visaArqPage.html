@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>  
+    <form th:action="@{/PayPage/sendVisaAReq210}" method="post"> <p><input type="submit" value="Submit AReq2.1" />
+    	<textarea id="aReq210" name="aReq210" cols="200" rows="40" th:text="${result1}" th:value="${result1}"></textarea>
+    </form>
+    <form th:action="@{/PayPage/sendVisaAReq220}" method="post"> <p><input type="submit" value="Submit AReq2.2" />
+    	<textarea id="aReq220" name="aReq220" cols="200" rows="40" th:text="${result2}" th:value="${result2}"></textarea>
+    </form>
+    <form th:action="@{/PayPage/sendVisaPReq220}" method="post"> <p><input type="submit" value="Submit pReq220" />
+    	<textarea id="pReq220" name="pReq220" cols="200" rows="40" th:text="${pReq220}" th:value="${pReq220}"></textarea>
+    </form>
+</body>
+</html>
