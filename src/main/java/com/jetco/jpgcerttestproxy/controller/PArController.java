@@ -40,7 +40,7 @@ import com.jetco.jpgcerttestproxy.services.inf.RequestMappingServiceInf;
 import com.jetco.jpgcerttestproxy.services.inf.Visa3DMessageServiceInf;
 import com.jetco.jpgcerttestproxy.threeDSenum.ErrorResponse;
 
-//@RestController
+
 @Controller
 public class PArController {
 

@@ -4,7 +4,7 @@ import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -36,7 +36,7 @@ import com.jetco.jpgcerttestproxy.object.response.RRes;
 import com.jetco.jpgcerttestproxy.object.response.RRes210;
 import com.jetco.jpgcerttestproxy.object.response.RRes220;
 
-@Service
+@Component
 public class ThreeDSMsgFactory {
 
 	static final Logger log = LoggerFactory.getLogger(ThreeDSMsgFactory.class);
